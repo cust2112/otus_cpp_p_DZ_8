@@ -5,12 +5,12 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 project(async VERSION ${PROJECT_VESRION})
 
-add_library(async
+add_library(async SHARED 
     async.cpp
 	bulkcontext.cpp
     consolewriter.cpp
 	filewriter.cpp
-	)
+)
 add_executable(async_cli main.cpp)
 
 set_target_properties(async async_cli PROPERTIES
@@ -20,6 +20,9 @@ set_target_properties(async async_cli PROPERTIES
 
 target_link_libraries(async_cli PRIVATE
     async
+)
+target_link_libraries(async_cli PUBLIC
+    Threads::Threads
 )
 
 if (MSVC)
