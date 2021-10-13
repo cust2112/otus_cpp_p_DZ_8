@@ -1,0 +1,62 @@
+\hypertarget{async_8cpp}{}\doxysection{async.\+cpp File Reference}
+\label{async_8cpp}\index{async.cpp@{async.cpp}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}async.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bulkcontext.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}consolewriter.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}filewriter.\+h\char`\"{}}\newline
+Include dependency graph for async.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{async_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceasync}{async}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} $>$ \mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{async\+::\+Contexts}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{async_8cpp_afce55effc8a645054e18d6441896deb1}{operator==}} (const \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} \&ctx1, const \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} \&ctx2)
+\item 
+handle\+\_\+t \mbox{\hyperlink{namespaceasync_a003d1a6899dca20ddcbff67a6abfb491}{async\+::connect}} (std\+::size\+\_\+t bulk)
+\item 
+void \mbox{\hyperlink{namespaceasync_aa1b54e89e951488a8dd79e720f3d8f8b}{async\+::receive}} (handle\+\_\+t handle, const char $\ast$data, std\+::size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{namespaceasync_a04233bf9bec326f7bcb4e1a9d5b8ee9d}{async\+::disconnect}} (handle\+\_\+t handle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConsoleWriter}{Console\+Writer}} \mbox{\hyperlink{namespaceasync_a822c5e0e473d0e62402065db9c7a0250}{async\+::cw}}
+\item 
+\mbox{\hyperlink{classFileWriter}{File\+Writer}} \mbox{\hyperlink{namespaceasync_a870e5f6356d84424ed49fc9316a7497d}{async\+::fw}}
+\item 
+Contexts \mbox{\hyperlink{namespaceasync_a97e55f060a57cf3a80c50fdc72ae2917}{async\+::free\+Ctxs}}
+\item 
+Contexts \mbox{\hyperlink{namespaceasync_ae38f657f86b1c6e62779f16032d30dad}{async\+::busy\+Ctxs}}
+\item 
+std\+::mutex \mbox{\hyperlink{namespaceasync_a5a779ab93bef7f8d181d40f22e17cf4f}{async\+::ctx\+Mtx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{async_8cpp_afce55effc8a645054e18d6441896deb1}\label{async_8cpp_afce55effc8a645054e18d6441896deb1}} 
+\index{async.cpp@{async.cpp}!operator==@{operator==}}
+\index{operator==@{operator==}!async.cpp@{async.cpp}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} \&}]{ctx1,  }\item[{const \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} \&}]{ctx2 }\end{DoxyParamCaption})}
+

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/async_cli.dir/main.cpp.o -o async_cli  -Wl,-rpath,/home/runner/work/otus_cpp_p_DZ_8/otus_cpp_p_DZ_8: libasync.so -lpthread 

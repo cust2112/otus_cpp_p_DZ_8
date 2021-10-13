@@ -1,0 +1,100 @@
+\hypertarget{namespaceasync}{}\doxysection{async Namespace Reference}
+\label{namespaceasync}\index{async@{async}}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::list$<$ \mbox{\hyperlink{structBulkContext}{Bulk\+Context}} $>$ \mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{Contexts}}
+\item 
+using \mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}} = void $\ast$
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}} \mbox{\hyperlink{namespaceasync_a003d1a6899dca20ddcbff67a6abfb491}{connect}} (std\+::size\+\_\+t bulk)
+\item 
+void \mbox{\hyperlink{namespaceasync_aa1b54e89e951488a8dd79e720f3d8f8b}{receive}} (\mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}} handle, const char $\ast$data, std\+::size\+\_\+t size)
+\item 
+void \mbox{\hyperlink{namespaceasync_a04233bf9bec326f7bcb4e1a9d5b8ee9d}{disconnect}} (\mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}} handle)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConsoleWriter}{Console\+Writer}} \mbox{\hyperlink{namespaceasync_a822c5e0e473d0e62402065db9c7a0250}{cw}}
+\item 
+\mbox{\hyperlink{classFileWriter}{File\+Writer}} \mbox{\hyperlink{namespaceasync_a870e5f6356d84424ed49fc9316a7497d}{fw}}
+\item 
+\mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{Contexts}} \mbox{\hyperlink{namespaceasync_a97e55f060a57cf3a80c50fdc72ae2917}{free\+Ctxs}}
+\item 
+\mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{Contexts}} \mbox{\hyperlink{namespaceasync_ae38f657f86b1c6e62779f16032d30dad}{busy\+Ctxs}}
+\item 
+std\+::mutex \mbox{\hyperlink{namespaceasync_a5a779ab93bef7f8d181d40f22e17cf4f}{ctx\+Mtx}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}\label{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}} 
+\index{async@{async}!Contexts@{Contexts}}
+\index{Contexts@{Contexts}!async@{async}}
+\doxysubsubsection{\texorpdfstring{Contexts}{Contexts}}
+{\footnotesize\ttfamily typedef std\+::list$<$\mbox{\hyperlink{structBulkContext}{Bulk\+Context}}$>$ \mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{async\+::\+Contexts}}}
+
+\mbox{\Hypertarget{namespaceasync_aa316889e453d00e4b6072f9026b72fde}\label{namespaceasync_aa316889e453d00e4b6072f9026b72fde}} 
+\index{async@{async}!handle\_t@{handle\_t}}
+\index{handle\_t@{handle\_t}!async@{async}}
+\doxysubsubsection{\texorpdfstring{handle\_t}{handle\_t}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{async\+::handle\+\_\+t}} = typedef void $\ast$}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceasync_a003d1a6899dca20ddcbff67a6abfb491}\label{namespaceasync_a003d1a6899dca20ddcbff67a6abfb491}} 
+\index{async@{async}!connect@{connect}}
+\index{connect@{connect}!async@{async}}
+\doxysubsubsection{\texorpdfstring{connect()}{connect()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}} async\+::connect (\begin{DoxyParamCaption}\item[{std\+::size\+\_\+t}]{bulk }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceasync_a04233bf9bec326f7bcb4e1a9d5b8ee9d}\label{namespaceasync_a04233bf9bec326f7bcb4e1a9d5b8ee9d}} 
+\index{async@{async}!disconnect@{disconnect}}
+\index{disconnect@{disconnect}!async@{async}}
+\doxysubsubsection{\texorpdfstring{disconnect()}{disconnect()}}
+{\footnotesize\ttfamily void async\+::disconnect (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}}}]{handle }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceasync_aa1b54e89e951488a8dd79e720f3d8f8b}\label{namespaceasync_aa1b54e89e951488a8dd79e720f3d8f8b}} 
+\index{async@{async}!receive@{receive}}
+\index{receive@{receive}!async@{async}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily void async\+::receive (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespaceasync_aa316889e453d00e4b6072f9026b72fde}{handle\+\_\+t}}}]{handle,  }\item[{const char $\ast$}]{data,  }\item[{std\+::size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceasync_ae38f657f86b1c6e62779f16032d30dad}\label{namespaceasync_ae38f657f86b1c6e62779f16032d30dad}} 
+\index{async@{async}!busyCtxs@{busyCtxs}}
+\index{busyCtxs@{busyCtxs}!async@{async}}
+\doxysubsubsection{\texorpdfstring{busyCtxs}{busyCtxs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{Contexts}} async\+::busy\+Ctxs}
+
+\mbox{\Hypertarget{namespaceasync_a5a779ab93bef7f8d181d40f22e17cf4f}\label{namespaceasync_a5a779ab93bef7f8d181d40f22e17cf4f}} 
+\index{async@{async}!ctxMtx@{ctxMtx}}
+\index{ctxMtx@{ctxMtx}!async@{async}}
+\doxysubsubsection{\texorpdfstring{ctxMtx}{ctxMtx}}
+{\footnotesize\ttfamily std\+::mutex async\+::ctx\+Mtx}
+
+\mbox{\Hypertarget{namespaceasync_a822c5e0e473d0e62402065db9c7a0250}\label{namespaceasync_a822c5e0e473d0e62402065db9c7a0250}} 
+\index{async@{async}!cw@{cw}}
+\index{cw@{cw}!async@{async}}
+\doxysubsubsection{\texorpdfstring{cw}{cw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConsoleWriter}{Console\+Writer}} async\+::cw}
+
+\mbox{\Hypertarget{namespaceasync_a97e55f060a57cf3a80c50fdc72ae2917}\label{namespaceasync_a97e55f060a57cf3a80c50fdc72ae2917}} 
+\index{async@{async}!freeCtxs@{freeCtxs}}
+\index{freeCtxs@{freeCtxs}!async@{async}}
+\doxysubsubsection{\texorpdfstring{freeCtxs}{freeCtxs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{namespaceasync_a9eba258225f01e832dd404f9a5a1fe0a}{Contexts}} async\+::free\+Ctxs}
+
+\mbox{\Hypertarget{namespaceasync_a870e5f6356d84424ed49fc9316a7497d}\label{namespaceasync_a870e5f6356d84424ed49fc9316a7497d}} 
+\index{async@{async}!fw@{fw}}
+\index{fw@{fw}!async@{async}}
+\doxysubsubsection{\texorpdfstring{fw}{fw}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classFileWriter}{File\+Writer}} async\+::fw}
+
