@@ -5,6 +5,8 @@ set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 project(async VERSION ${PROJECT_VESRION})
 
+find_package (Threads REQUIRED)
+
 add_library(async SHARED 
     async.cpp
 	bulkcontext.cpp
